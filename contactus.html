@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Chitkara University Sports Arena, Baddi</title>
+    <style>
+        :root {
+        --primary: #ff0000;
+        --dark: #111111;
+        --light: #ffffff;
+        --gray: #333333;
+        }
+        header {
+            
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 20px 0;
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+        } 
+        nav {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 0.5rem 0;
+            background: rgba(0, 0, 0, 0.95);
+        }
+
+        .nav-links {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            color: #f4f4f4;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--dark));            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: rgb(52, 52, 52);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        .contact-form input, .registration-form select {
+            background-color: #333333;
+            color: #f2f0f0;
+        }
+
+        .contact-info h2 {
+            color: #f8f5f5;
+        }
+        .contact-info p {
+            color: #f2f0f0;
+        }
+        .contact-form h2 {
+            color: #ff0000;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #ebebeb;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #3d3d3d;
+        }
+        button {
+            background-color: #ff0000;
+            color: rgb(244, 244, 244);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff0000;
+        }
+        .sm{
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 20px 0;
+            background-color: #fafafa;            
+            
+        }
+        
+        .sm {
+            border: #fafafa;
+            background-color: #272430;    
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .sm.scrolled {
+            padding: 0.5rem 0;
+            background: rgba(0, 0, 253, 0.95);
+        }
+
+        .sm-links{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .sm a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .sm a:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+
+        }
+        .info1 {
+            padding: 110px;  
+        }
+        footer {
+            background: linear-gradient(135deg, var(--dark), var(--primary));
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 4rem;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Us - Chitkara University Sports Arena, Baddi</h1>
+
+<nav id="mainNav">
+    <div class="nav-links">
+        <a href="indexproject.html">Home</a>
+        <a href="rulesandregulations.html">Rules</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="aboutus.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="contactus.html">Contact</a>
+    </div>
+</nav>
+</header>
+<div class="container">
+    <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="submit_contact.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Location:</strong>Atal Shiksha Kunj, Pinjore-Nalagarh National Highway, kalujhinda, Distt, Baddi, Himachal Pradesh(174103)</p>
+        <p><strong>Phone:</strong> Sports Office +91.1795.661005</p>
+        <p><strong>Email:</strong> info@chitkarauniversity.edu.in</p>
+        
+    </div>
+
+
+    <br>
+</div>
+<h1> 
+  
+    
+    
+    <p>
+        
+        <h2>
+        <div class="info1">
+            <h1> Info: <br> <br></h1>
+        To make available to students opportunities for the instruction and participation in a wide range of recreational and competitive programs which can develop sound lifelong leisure values and skills. To provide an avenue for camaraderie in the college community through common interests; to develop a feeling of belonging among individuals in the shared pursuit of leisure interests.
+        <br> <br>
+
+        To develop leadership by providing opportunities for students to organize, administrate and problem solve for individual clubs and to become officers thereof. The club has organized events like Cross Country, Kho Kho, 6 on 6 Cricket, Chitkara CPL, etc.
+        <br> 
+        <br>
+        Faculty Coordinator : Mr. Anil Rana
+        <br>
+        President : Siddhant Chauhan
+        <br>
+        Vice-President : Anamika Sharma 
+        </div>
+        </h2>
+    
+
+    </p>
+    </div>
+    <h2>
+        <div class="sm">
+            <div class="sm-links"></div>
+            <a href="https://www.instagram.com/cu_arcs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                <img src="instagram.svg" height="35px"> Instagram</a> &nbsp; &nbsp;
+            
+            <a href="https://www.facebook.com/CUARCS/">
+                <img src="facebook-squared.svg" height="28px">
+                Face-Book</a>
+            &nbsp; &nbsp;
+            
+            <a href="https://www.chitkarauniversity.edu.in/"><img src="website.svg" height="28px">
+                Main-Website</a>
+            
+            </div>
+    
+</h1>
+</div>
+
+<footer>
+    &copy; 2024 Chitkara University Sports Arena, Baddi. All Rights Reserved.
+</footer>
+
+</body>
+</html>

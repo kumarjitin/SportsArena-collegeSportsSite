@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Arena - Schedule</title>
+    <style>
+        :root {
+        --primary: #ff0000;
+        --dark: #111111;
+        --light: #ffffff;
+        --gray: #333333;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #070707;
+            color: #f6f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--dark));            
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: linear-gradient(135deg, var(--primary), var(--dark));            
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 0.5rem 0;
+            background: rgba(0, 0, 0, 0.95);
+        }
+
+        .nav-links {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #ffffff;
+            text-align: center;
+        }
+
+        th {
+            background-color: #ff0000;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #080808;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #ff0000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer {
+            background: linear-gradient(135deg, var(--dark), var(--primary));
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 4rem;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chitkara University Sports Arena</h1>
+    <h2>Schedule of Sports Activities</h2>
+
+<nav id="mainNav">
+    <div class="nav-links">
+        <a href="indexproject.html">Home</a>
+        <a href="rulesandregulations.html">Rules</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="aboutus.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="contactus.html">Contact</a>
+    </div>
+</nav>
+</header>
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Sport</th>
+                <th>Time</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Basketball</td>
+                <td>4:00 PM - 6:00 PM</td>
+                <td>Main Court</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Badminton</td>
+                <td>5:00 PM - 7:00 PM</td>
+                <td>Indoor Hall</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Football</td>
+                <td>6:00 PM - 8:00 PM</td>
+                <td>Football Ground</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Table Tennis</td>
+                <td>4:30 PM - 6:30 PM</td>
+                <td>Indoor Hall</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Cricket</td>
+                <td>5:00 PM - 7:00 PM</td>
+                <td>Cricket Ground</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Volleyball</td>
+                <td>4:00 PM - 6:00 PM</td>
+                <td>Volleyball Court</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>Basketball</td>
+                <td>10:00 AM - 12:00 PM</td>
+                <td>Main Court</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<footer>
+    <p>Chitkara University Sports Arena &copy; 2024</p>
+</footer>
+
+</body>
+</html>

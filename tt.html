@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tennis Tournament - Chitkara University</title>
+    <style>
+        :root {
+        --primary: #ff0000;
+        --dark: #111111;
+        --light: #ffffff;
+        --gray: #333333;
+        }
+        header {
+            
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 20px 0;
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            
+            
+        }
+
+        nav {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 0.5rem 0;
+            background: rgba(0, 0, 0, 0.95);
+        }
+
+        .nav-links {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #ece9e9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--dark));            
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .hero {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 2em;
+        }
+        .hero h1 {
+            background: rgba(223, 32, 32, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(46, 46, 46);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(165, 165, 165, 0.1);
+        }
+        .event-details, .registration, .contact {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #ff0000;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        table, th, td {
+            border: 1px solid #b1b1b1;
+            padding: 8px;
+        }
+        th {
+            background-color: #ff0000;
+            color: rgb(205, 204, 204);
+        }
+        .register-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #ff0000;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .register-btn:hover {
+            background-color: #ff0000;
+        }
+        .button {
+            background-color: #d2232a;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        footer {
+            background: linear-gradient(135deg, var(--dark), var(--primary));
+            padding: 1.0rem;
+            text-align: center;
+            margin-top: 4rem;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+
+    <h1>Chitkara University Sports Arena (Baddi)</h1>
+
+<nav id="mainNav">
+    <div class="nav-links">
+        <a href="indexproject.html">Home</a>
+        <a href="rulesandregulations.html">Rules</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="aboutus.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="contactus.html">Contact</a>
+    </div>
+</nav>
+</header>
+<br>
+<section class="hero">
+    <h1>Table Tennis</h1>
+</section>
+
+<div class="container">
+    <section class="section">
+        <h2>About Table Tennis at Chitkara</h2>
+        <p>At Chitkara University, table tennis is a popular indoor sport that provides students with opportunities for both competitive and recreational play. Our table tennis program welcomes players of all skill levels, offering intramural matches, and regular practice sessions for skill development.</p>
+    </section>
+
+    <section class="section">
+        <h2>Facilities</h2>
+        <p>Our table tennis facilities include professional-grade tables, paddles, and balls, as well as a spacious area for singles and doubles matches. The setup meets all national standards, ensuring a high-quality playing experience for our students.</p>
+    </section>
+    
+
+    <section class="section">
+        <h2>Join Us</h2>
+        <p>If you're interested in joining the table tennis team or participating in related events, please visit the sports office or contact us via email.</p>
+        <a href="join.html" class="button">Join the Team</a>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Chitkara University. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

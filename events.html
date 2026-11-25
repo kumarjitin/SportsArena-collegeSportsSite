@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitkara University Sports Arena Events</title>
+    <style>
+       :root {
+        --primary: #ff0000;
+        --dark: #111111;
+        --light: #ffffff;
+        --gray: #333333;
+        }
+        header {
+            
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 20px 0;
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            
+            
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--dark)); 
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            
+        }
+
+        nav {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 0.5rem 0;
+            background: rgba(0, 0, 0, 0.95);
+        }
+
+        .nav-links {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .event {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .event:last-child {
+            border-bottom: none;
+        }
+        .event h3 {
+            margin: 0;
+            color: #f8f7f7;
+        }
+        .event p {
+            margin: 5px 0;
+            color: #f8f4f4;
+        }
+
+        .registration-form {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #000000;
+            border-radius: 8px;
+        }
+        .registration-form h2 {
+            margin-top: 0;
+            color: #ff0000;
+        }
+        .registration-form label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #dadada;
+        }
+        .registration-form input, .registration-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #bcbcbc;
+            border-radius: 5px;
+            background-color: #111111;
+            color: #dadada;
+        }
+        .registration-form button {
+            background-color: #ff0000;
+            color: rgb(247, 246, 246);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .registration-form button:hover {
+            background-color: #ff0000;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #fcfcfc;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--dark));            
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+        #rules{
+            color: white;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #b02121;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 40px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            ul {
+                margin-left: 20px;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        p {
+            font-size: 16px;
+            color: #ffffff;
+        }
+        ul {
+            margin: 10px 0;
+            padding: 0;
+            list-style-type: square;
+            color: #ffffff;
+        }
+        .kh{
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top:20px ;
+            background-color: #000000;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        footer {
+            background: linear-gradient(135deg, var(--dark), var(--primary));
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 4rem;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Events at Chitkara University Sports Arena (Baddi)
+
+    </h1>
+
+ <nav id="mainNav">
+        <div class="nav-links">
+            <a href="indexproject.html">Home</a>
+            <a href="rulesandregulations.html">Rules</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="aboutus.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="contactus.html">Contact</a>
+        </div>
+    </nav>
+</header>
+<p>  <br>
+    <div class="kh">
+    <h1> Khelo India Event</h1>
+    <p>
+            <h3> <h2>Khelo India: Building a Strong Sporting Nation</h2>  India, an initiative launched by the Government of India, is a nationwide program aimed at transforming the sports ecosystem in the country. With a vision to create a strong sporting culture and harness the potential of young athletes, Khelo India focuses on identifying and nurturing talent from grassroots to elite levels. <br>The program promotes sports at both school and university levels, ensuring that the best talent gets the opportunity to receive professional training and showcase their skills on national and international platforms. The initiative emphasizes the importance of physical fitness and mental well-being while encouraging inclusivity by providing equal opportunities for all athletes, regardless of their background.For institutions like Chitkara University, Baddi, Khelo India offers immense potential to align with national sports initiatives,<br> encouraging students to actively participate and represent the university in various competitions. By fostering a sports culture on campus, the university can motivate its students to excel in their chosen fields, providing top-notch infrastructure and coaching to support their endeavors.Participating in Khelo India events would also enhance the university's reputation as a hub for athletic development.
+    </p></h3>
+    </p>
+    <p>
+       <h3> For institutions like Chitkara University, Baddi, Khelo India offers immense potential to align with national sports initiatives,<br> encouraging students to actively participate and represent the university in various competitions. By fostering a sports culture on campus, the university can motivate its students to excel in their chosen fields, providing top-notch infrastructure and coaching to support their endeavors. Hosting and participating in Khelo India events would also enhance the university's reputation as a hub for athletic development.</h3>
+    </p>
+    <br><br><br>
+
+    
+    <h3><h2>Key Points to Highlight:</h2>
+    <ul>
+        <li><strong>Khelo India Initiative</strong>: Highlight the importance of Khelo India in promoting sports and fitness across the country.</li>
+        <li><strong>University's Alignment</strong>: Showcase how Chitkara University aligns with Khelo India's vision by supporting young athletes and sports development.</li>
+    </ul>
+    </h3>
+    
+    </div>  
+
+    <h2> &nbsp; &nbsp;
+        Chitkara University Sports Board  alignment with Fit India Movement:    </h2>
+    <img src="kh.jpg" height="600px" width="1450"> 
+<div class="container">
+    <div class="event">
+        <h2>Upcoming: </h2>
+        <h3>Cricket Tournament</h3>
+        <p>Date: October 21, 2024</p>
+        <p>Time: 10:00 AM - 5:00 PM</p>
+        <p>Venue: Chitkara Sports Ground</p>
+        <p>Description: The annual inter-department cricket tournament. Come cheer for your favorite team!</p>
+    </div>
+
+    <div class="event">
+        <h3>Basketball Championship</h3>
+        <p>Date: October 24, 2024</p>
+        <p>Time: 12:00 PM - 3:00 PM</p>
+        <p>Venue: Indoor Basketball Court</p>
+        <p>Description: A fast-paced, exciting championship featuring the best teams from across the university.</p>
+    </div>
+
+    <div class="event">
+        <h3>Football League</h3>
+        <p>Date: October 28, 2024</p>
+        <p>Time: 2:00 PM - 6:00 PM</p>
+        <p>Venue: Chitkara University Football Field</p>
+        <p>Description: Witness thrilling matches as top teams compete for the university title.</p>
+    </div>
+    <div class="event">
+    <h3>Volleyball League</h3>
+    <p><strong>Date:</strong> November 5, 2024</p>
+    <p><strong>Time:</strong> 3:00 PM - 7:00 PM</p>
+    <p><strong>Venue:</strong> Chitkara University Volleyball Court</p>
+    <p><strong>Description:</strong> Get ready for an exciting Volleyball League at Chitkara University! Teams will battle it out on the court, showcasing agility, teamwork, and competitive spirit. Don’t miss the chance to cheer for your favorite teams as they compete for the championship!</p>
+</div>
+<br> <br>
+    <div class="registration-form">
+        <h2>Event Registration Form</h2>
+        <form action="submit_registration.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="event">Select Event:</label>
+            <select id="event" name="event" required>
+                <option value="Cricket Tournament">Cricket Tournament</option>
+                <option value="Basketball Championship">Basketball Championship</option>
+                <option value="Football League">Football League</option>
+            </select>
+
+            <label for="comments">Additional Comments:</label>
+            <input type="text" id="comments" name="comments">
+
+            <button type="submit">Register Now</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 Chitkara University Sports Arena. All Rights Reserved.
+</footer>
+
+</body>
+</html>

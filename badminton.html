@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badminton at Chitkara University, Baddi</title>
+    <style>
+        :root {
+        --primary: #ff0000;
+        --dark: #111111;
+        --light: #ffffff;
+        --gray: #333333;
+        }
+        header {
+            
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 20px 0;
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+        }    
+        .hero {
+        background: url('volleyball-hero.jpg') no-repeat center center;
+        background-size: cover;
+        height: 83px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 2em;  
+        }
+        nav {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 0.5rem 0;
+            background: rgba(0, 0, 0, 0.95);
+        }
+
+        .nav-links {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: rgb(56, 55, 55);
+            padding: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2 {
+            color: #ffffff;
+        }
+        p {
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        .info-section, .form-section {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #333333;
+            color: whitesmoke;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            color: white;
+            background-color: #ff0000;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #ff0000;
+        }
+        nav {
+            background-color: #000000; /* Black */
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #ff0000; /* Red */
+        }
+        footer {
+            background: linear-gradient(135deg, var(--dark), var(--primary));
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 4rem;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+  <header>
+
+    <h1>Chitkara University Sports</h1>
+
+    <nav>
+        <a href="indexproject.html">Home</a>
+        <a href="rulesandregulations.html">Rules and Regulations</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="events.html">Events</a>
+        <a href="contactus.html">Contact Us</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Badminton</h1>
+</section>
+<div class="container">
+    <div class="info-section">
+        <h1>Badminton at Chitkara University, Baddi</h1>
+        <p>Badminton is a popular sport at Chitkara University, Baddi, providing students with a platform to stay fit, learn discipline, and compete in regional tournaments. Our university boasts top-notch badminton facilities, including multiple courts, professional training sessions, and regular practice timings.</p>
+
+        <h2>Facilities and Timings</h2>
+        <p>We have two well-maintained indoor badminton courts available for both beginners and advanced players. The courts are equipped with high-quality flooring and proper lighting to ensure the best playing experience. Timings for practice sessions are as follows:</p>
+        <ul>
+            <li>Morning: 6:00 AM - 9:00 AM</li>
+            <li>Evening: 5:00 PM - 9:00 PM</li>
+        </ul>
+
+        <h2>Why to Join?</h2>
+        <p>Whether you're looking to pursue badminton professionally or simply want a way to stay active, our badminton program is designed for you. Benefits of joining include:</p>
+        <ul>
+            <li>Guidance from certified badminton coaches</li>
+            <li>Opportunities to participate in inter-university tournaments</li>
+            <li>Access to exclusive fitness and conditioning programs</li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+
+    <div class="form-section">
+        <h2>Badminton Membership Form</h2>
+        <form action="/submit-badminton-membership" method="post">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="studentID">Student ID (If Applicable)</label>
+                <input type="text" id="studentID" name="studentID">
+            </div>
+            <div class="form-group">
+                <label for="membership">Membership Duration</label>
+                <select id="membership" name="membership" required>
+                    <option value="">Select Membership Duration</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="quarterly">Quarterly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comments">Additional Comments (Optional)</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit Application</button>
+            </div>
+        </form>
+    </div>
+</div>
+<footer>
+    <p>Chitkara University Sports Arena &copy; 2024</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volleyball - Chitkara University Sports</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external stylesheet -->
+    <style>
+        :root {
+        --primary: #ff0000;
+        --dark: #111111;
+        --light: #ffffff;
+        --gray: #333333;
+        }
+        header {
+            
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 20px 0;
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            
+            
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #f7f5f5;
+            background-color: #0e0e0e;
+        }
+
+        nav {
+            background: linear-gradient(135deg, var(--primary), var(--dark));            
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 0.5rem 0;
+            background: rgba(0, 0, 0, 0.95);
+        }
+
+        .nav-links {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #ffffff;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .hero {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 2em;
+        }
+        .hero h1 {
+            background: rgba(223, 32, 32, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .card {
+            background: #5a5a5a;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+        }
+        .button {
+            background-color: #d2232a;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        footer {
+            background: linear-gradient(135deg, var(--dark), var(--primary));
+            padding: 1.0rem;
+            text-align: center;
+            margin-top: rem;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chitkara University Sports Arena (Baddi)</h1>
+
+<nav id="mainNav">
+    <div class="nav-links">
+        <a href="indexproject.html">Home</a>
+        <a href="rulesandregulations.html">Rules</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="aboutus.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="contactus.html">Contact</a>
+    </div>
+</nav>
+</header>
+<br>
+<section class="hero">
+    <h1>Volleyball</h1>
+</section>
+
+<div class="container">
+    <section class="section">
+        <h2>About Volleyball at Chitkara</h2>
+        <p>At Chitkara University, volleyball is one of the most popular sports, offering students a chance to engage in competitive and recreational play. Our volleyball program is open to all students, regardless of skill level, represent the university in intercollege tournaments, and participate in skill development sessions.</p>
+    </section>
+
+    <section class="section">
+        <h2>Facilities</h2>
+        <p>Our volleyball courts are designed to meet national standards, equipped with high-quality nets, flooring, and lighting for evening practices. We ensure a safe and supportive environment for students to hone their skills and enjoy the game.</p>
+    </section>
+    
+
+    <section class="section">
+        <h2>Join Us</h2>
+        <p>If interested in joining the volleyball team or participating in any related events, please visit the sports office or contact us via email .</p>
+        <a href="join.html" class="button">Join the Team</a>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Chitkara University. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

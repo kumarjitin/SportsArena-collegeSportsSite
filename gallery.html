@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Arena Gallery - Chitkara University</title>
+    <style>
+        :root {
+        --primary: #ff0000;
+        --dark: #111111;
+        --light: #ffffff;
+        --gray: #333333;
+        }
+        header {
+            
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 20px 0;
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            
+            
+        }
+
+        nav {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 0.5rem 0;
+            background: rgba(0, 0, 0, 0.95);
+        }
+
+        .nav-links {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 0.5rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--dark));            
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            color: #e0e0e0;
+        }
+
+        .gallery-item {
+            border: 2px solid #ddd;
+            padding: 10px;
+            background-color: rgb(67, 67, 67);
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .placeholder {
+            background-color: #e0e0e0;
+            width: 100%;
+            height: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 18px;
+            
+        }
+        footer {
+            background: linear-gradient(135deg, var(--dark), var(--primary));
+            padding: 1.2rem;
+            text-align: center;
+            margin-top: rem;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chitkara University Sports Arena Gallery</h1>
+   <nav id="mainNav">
+    <div class="nav-links">
+        <a href="indexproject.html">Home</a>
+        <a href="rulesandregulations.html">Rules</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="aboutus.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="contactus.html">Contact</a>
+    </div>
+</nav>
+</header>
+<div class="container">
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <div class="placeholder"></div>
+             <img src="tt.jpg" alt="Photo 1"> 
+        </div>
+        <div class="gallery-item">
+            <div class="placeholder"></div>
+            <img src="gym11.jpg" alt="Photo 2"> 
+        </div>
+        <div class="gallery-item">
+            <div class="placeholder"></div>
+            <img src="football.jpeg" alt="Photo 3"> 
+        </div>
+        <div class="gallery-item">
+            <div class="placeholder"></div>
+            <img src="badminton.jpeg" alt="Photo 4"> 
+        </div>
+        <div class="gallery-item">
+            <div class="placeholder"></div>
+            <img src="vollyyyyy.jpg" alt="Photo 5"> 
+        </div>
+        <div class="gallery-item">
+            <div class="placeholder"></div>
+            <img src="crick.jpeg" alt="Photo 6"> 
+        </div>
+        <div class="gallery-item">
+            <div class="placeholder"></div>
+            <img src="football.jpeg" alt="Photo 7"> 
+
+        </div>
+        <div class="gallery-item">
+            <div class="placeholder"></div>
+            <img src="tt.jpg" alt="Photo 8"> 
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Chitkara University Sports Arena &copy; 2024</p>
+</footer>
+
+</body>
+</html>

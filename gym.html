@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitkara University Gym Membership Form</title>
+    <style>
+        :root {
+        --primary: #e70d0d;
+        --dark: #111111;
+        --light: #ffffff;
+        --gray: #333333;
+        }
+        nav {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 0.5rem 0;
+            background: rgba(0, 0, 0, 0.95);
+        }
+
+        .nav-links {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+
+        header {
+            
+            color: rgb(255, 251, 251);
+            text-align: center;
+            padding: 20px 0;
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            
+            
+        }
+
+      
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #ffffff;
+            background-color: #2a0e0e;
+        }
+        .container {
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: rgb(66, 65, 65);
+           
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .container h2 {
+            text-align: center;
+            color: #ff0000;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #a2a1a1;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            color: rgb(242, 242, 242);
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background: linear-gradient(135deg, var(--dark), var(--primary));
+            padding-top: 17rem;
+            padding-bottom: 17rem;
+            text-align: center;
+            margin-top: rem;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Chitkara University Sports Arena</h1>
+    
+    <nav id="mainNav">
+        <div class="nav-links">
+            <a href="indexproject.html">Home</a>
+            <a href="rulesandregulations.html">Rules</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="aboutus.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="contactus.html">Contact</a>
+        </div>
+    </nav>
+    <img src="gym11.jpg" height="450px">
+
+</header>
+<div class="container">
+    <h2>Chitkara University Gym Membership Form</h2>
+    <form action="/submit-gym-membership" method="post">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="studentID">Student ID (If Applicable)</label>
+            <input type="text" id="studentID" name="studentID">
+        </div>
+        <div class="form-group">
+            <label for="membership">Membership Type</label>
+            <select id="membership" name="membership" required>
+                <option value="">Select Membership Type</option>
+                <option value="monthly">3 Months Zumba(Rs.3900.00)</option>
+                <option value="quarterly">6 Months Gym(Rs.8900.00)</option>
+                <option value="yearly">Yearly Gym (Rs.11400.00)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comments">Additional Comments (Optional)</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Submit Application</button>
+        </div>
+    </form>
+</div>
+<br>
+<footer>
+    <p>Chitkara University Sports Arena &copy; 2024</p>
+</footer>
+
+</body>
+</html>

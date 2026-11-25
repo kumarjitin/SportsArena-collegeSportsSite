@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitkara University Sports Arena</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+:root {
+    --primary: #ff0000;
+    --dark: #111111;
+    --light: #ffffff;
+    --gray: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary), var(--dark));
+    padding: 2rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-content {
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 30px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+nav.scrolled {
+    padding: 0.5rem 0;
+    background: rgba(0, 0, 0, 0.95);
+}
+
+.nav-links {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--light);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+}
+
+.hero-video {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: cover;
+    margin-top: 2rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 3rem 0;
+    background: linear-gradient(45deg, var(--primary), var(--light));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.sports-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.sport-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+.sport-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.sport-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.sport-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.sport-card:hover img {
+    transform: scale(1.1);
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.sport-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.sport-card p {
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.sport-card a {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: var(--primary);
+    color: var(--light);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.sport-card a:hover {
+    background: var(--light);
+    color: var(--primary);
+}
+
+footer {
+    background: linear-gradient(135deg, var(--dark), var(--primary));
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .sports-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-video {
+        max-height: 50vh;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .sport-card img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        padding: 0 1rem;
+    }
+
+    .logo-container {
+        font-size: 24px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .nav-links {
+        padding: 0 1rem;
+        gap: 0.5rem;
+    }
+
+    .nav-links a {
+        padding: 0.3rem 0.8rem;
+    }
+
+    .sports-grid {
+        padding: 1rem;
+    }
+
+    .sport-card img {
+        height: 180px;
+    }
+
+    .card-content {
+        padding: 1rem;
+    }
+
+    .sport-card h3 {
+        font-size: 1.2rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div class="header-content">
+            <div class="logo-container">
+                <h1>
+                    <img src="culogo.jpg" alt="Trulli" width="140" height="130" align="left" > &nbsp &nbsp  &nbsp &nbsp Chitkara University Sports Arena &nbsp &nbsp &nbsp &nbsp &nbsp
+                    <img src="arcs.jpg" alt="Trulli" width="140" height="130" align="right" >
+                </h1>   
+               
+ 
+            </div>
+           
+        </div>
+        
+        
+        <nav id="mainNav">
+            <div class="nav-links">
+                <a href="indexproject.html">Home</a>
+                <a href="aboutus.html">About</a>
+                <a href="rulesandregulations.html">Rules</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="events.html">Events</a>
+                <a href="achievements.html">Achievements</a>
+                <a href="contactus.html">Contact</a>
+
+            </div>
+        </nav>
+        <video width="1470" autoplay loop>
+            <source src="indexcu.mp4" type="video/mp4" autoplay loop>
+            </video>
+    </header>
+
+    <h2 class="section-title">Our Sports Facilities</h2>
+
+    <div class="sports-grid">
+        <div class="sport-card" data-aos="fade-up">
+            <img src="vollyyyyy.jpg" alt="Volleyball">
+            <div class="card-content">
+                <h3>Volleyball</h3>
+                <p>Enjoy competitive or recreational volleyball with your peers. Our facilities are top-notch!</p>
+                <a href="volleyball.html">Learn More</a>
+            </div>
+        </div>
+
+        <div class="sport-card" data-aos="fade-up" data-aos-delay="100">
+            <img src="crick.jpeg" alt="Cricket">
+            <div class="card-content">
+                <h3>Cricket</h3>
+                <p>Join our cricket league or just practice your shots in the nets. Fun for all skill levels!</p>
+                <a href="cricket.html">Learn More</a>
+            </div>
+        </div>
+
+        <div class="sport-card" data-aos="fade-up" data-aos-delay="200">
+            <img src="football.jpeg" alt="Football">
+            <div class="card-content">
+                <h3>Football</h3>
+                <p>Whether you're a pro or a beginner, play football on our well-maintained grass fields.</p>
+                <a href="football.html">Learn More</a>
+            </div>
+        </div>
+
+        <div class="sport-card" data-aos="fade-up">
+            <img src="tt.jpg" alt="Table Tennis">
+            <div class="card-content">
+                <h3>Table Tennis</h3>
+                <p>Challenge your friends to a fast-paced game of table tennis. Great for quick reflexes!</p>
+                <a href="tt.html">Learn More</a>
+            </div>
+        </div>
+
+        <div class="sport-card" data-aos="fade-up" data-aos-delay="100">
+            <img src="badminton.jpeg" alt="Badminton">
+            <div class="card-content">
+                <h3>Badminton</h3>
+                <p>Our indoor badminton courts are available for casual and competitive games alike.</p>
+                <a href="badminton.html">Learn More</a>
+            </div>
+        </div>
+
+        <div class="sport-card" data-aos="fade-up" data-aos-delay="200">
+            <img src="gym1.jpg" alt="Gym">
+            <div class="card-content">
+                <h3>Gym Membership</h3>
+                <p>Stay fit with our modern gym equipment. Sign up for a membership and start your fitness journey.</p>
+                <a href="gym.html">Get Membership</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Chitkara University | All Rights Reserved</p>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tennis Tournament Registration</title>
+    <style>
+        :root {
+        --primary: #ff0000;
+        --dark: #111111;
+        --light: #ffffff;
+        --gray: #333333;
+        }
+        header {
+            
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 20px 0;
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            
+            
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: azure;
+        }
+        .form-container {
+            width: 400px;
+            padding: 20px;
+            background-color: #3f3f3f;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+        }
+        .form-container h2 {
+            text-align: center;
+            color: #ff0000;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #ff0000;
+            color: rgb(178, 178, 178);
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #ff0000;
+        }
+        footer {
+            background: linear-gradient(135deg, var(--dark), var(--primary));
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 4rem;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Chitkara University Sports Arena</h1>
+    <h2 id="rules">Rules and Regulations</h2>
+
+ <nav id="mainNav">
+        <div class="nav-links">
+            <a href="indexproject.html">Home</a>
+            <a href="rulesandregulations.html">Rules</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="aboutus.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="contactus.html">Contact</a>
+        </div>
+    </nav>
+</header>
+    <div class="form-container">
+        <h2>Table Tennis Tournament Registration</h2>
+        <form action="submit_registration.php" method="post">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="university-id">University ID:</label>
+                <input type="text" id="university-id" name="university_id" required>
+            </div>
+            <div class="form-group">
+                <label for="category">Tournament Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">Select Category</option>
+                    <option value="singles">Singles</option>
+                    <option value="doubles">Doubles</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="experience">Playing Experience (in years):</label>
+                <input type="number" id="experience" name="experience" min="0" max="10" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
